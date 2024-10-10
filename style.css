@@ -57,7 +57,7 @@ a {
 
 .navbar ul li:hover a,
 .navbar ul li.active a {
-    color: #7cf03d;
+    color: #f100fe;
 }
 
 .home {
@@ -87,7 +87,6 @@ a {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: 0.7px #7cf03d;
     animation: display-text 16s linear infinite;
     animation-delay: calc(-4s * var(--i));
 }
@@ -103,7 +102,7 @@ a {
     position: absolute;
     width: 0;
     border-right: 2px solid #7cf03d;
-    color: #7cf03d;
+    color: #f100fe;
     white-space: nowrap;
     overflow: hidden;
     animation: fill-text 4s linear infinite;
@@ -154,10 +153,10 @@ a {
 .home-info .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
-    border: 2px solid #7cf03d;
+    border: 2px solid ;
     border-radius: 50%;
     font-size: 20px;
-    color: #7cf03d;
+    color: #f100fe;
     margin: 0 8px;
     transition: background 0.5s, color 0.5s, box-shadow 0.5s;
 }
@@ -166,6 +165,24 @@ a {
     background: #7cf03d;
     color: #1f242d;
     box-shadow: 0 0 10px #7cf03d;
+}
+
+.home-info .btn-sci .sci .github:hover {
+    background: #fff;
+    color: #1f242d;
+    box-shadow: 0 0 10px #fff;
+}
+
+.home-info .btn-sci .sci .instagram:hover {
+    background: #e1306c;
+    color: #1f242d;
+    box-shadow: 0 0 10px #e1306c;
+}
+
+.home-info .btn-sci .sci .youtube:hover {
+    background: red;
+    color: #1f242d;
+    box-shadow: 0 0 10px red;
 }
 
 .home-img .img-box {
@@ -245,3 +262,74 @@ a {
         transform: translateY(0);
     }
 }
+
+/* Ukuran Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 5%;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        font-size: 24px; /* Perkecil ukuran logo */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Tampilkan menu vertikal */
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 15px; /* Beri jarak antar item */
+    }
+
+    .navbar ul li a {
+        font-size: 18px; /* Perkecil ukuran font menu */
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column; /* Ubah posisi teks dan gambar menjadi vertikal */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-info h1 {
+        font-size: 36px; /* Perkecil ukuran judul */
+    }
+
+    .home-info h2 {
+        font-size: 24px; /* Perkecil ukuran subjudul */
+    }
+
+    .home-info p {
+        font-size: 14px; /* Perkecil ukuran paragraf */
+    }
+
+    .home-img .img-box {
+        width: 60vw; /* Kurangi ukuran gambar di mobile */
+        height: 60vw;
+    }
+
+    .home-img .img-box .img-item img {
+        width: 100%; /* Pastikan gambar tetap sesuai dengan ukurannya */
+    }
+
+    /* Button dan Social Icons */
+    .btn {
+        padding: 8px 20px; /* Sesuaikan padding tombol */
+        font-size: 14px;
+    }
+
+    .sci a {
+        font-size: 18px; /* Perkecil ukuran ikon media sosial */
+    }
+
+    .bars-animation {
+        display: none; /* Sembunyikan animasi bar di ukuran mobile jika diperlukan */
+    }
+}
+

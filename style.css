@@ -266,10 +266,18 @@ a {
 /* Ukuran Mobile (max-width: 768px) */
 @media screen and (max-width: 768px) {
 
+    /* Body */
+    body {
+        background-color: #000000; /* latar hitam */
+        color: #ffffff /* teks warna putih */
+        font-family: 'Poppins', sans-serif; /* font */
+    }
+
     /* Navbar */
     .navbar {
+        flex-direction: column;
         padding: 15px 5%;
-        justify-content: space-between;
+        text-align: center;
     }
 
     .navbar .logo {
@@ -282,12 +290,12 @@ a {
     }
 
     .navbar ul li {
-        margin-right: 0;
-        margin-bottom: 15px; /* Beri jarak antar item */
+        margin-bottom: 10px; /* Beri jarak antar item */
     }
 
     .navbar ul li a {
         font-size: 18px; /* Perkecil ukuran font menu */
+        color: #ff00ff; /* ungu */
     }
 
     /* Home Section */
@@ -298,15 +306,20 @@ a {
     }
 
     .home-info h1 {
-        font-size: 36px; /* Perkecil ukuran judul */
+        font-size: 28px; /* Perkecil ukuran judul */
+        text-align: center;
     }
 
     .home-info h2 {
-        font-size: 24px; /* Perkecil ukuran subjudul */
+        font-size: 22px; /* Perkecil ukuran subjudul */
+        color: #ff00ff; /* ungu */
+        text-align: center;
     }
 
     .home-info p {
         font-size: 14px; /* Perkecil ukuran paragraf */
+        text-align: center;
+        margin: 0 15px;
     }
 
     .home-img .img-box {
@@ -325,7 +338,32 @@ a {
     }
 
     .sci a {
+        margin: 0 10px;
         font-size: 18px; /* Perkecil ukuran ikon media sosial */
+    }
+
+    /* Button CV */
+    .btn {
+        background-color: transparent;
+        border: 2px solid #00ff00; /* Warna border hijau */
+        color: #00ff00;
+        padding: 10px 20px;
+        font-size: 16px;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+     /* Gambar profil */
+    .home-img .img-box {
+        width: 60vw;
+        height: 60vw;
+        margin: 0 auto;
+        display: block;
+    }
+
+     .home-img .img-item img {
+        border-radius: 50%;
+        border: 3px solid #00ff00;
     }
 
     .bars-animation {

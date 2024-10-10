@@ -270,38 +270,37 @@ a {
     }
 
     .navbar {
-        padding: 10px 5%;
+        padding: 5px 3%;
     }
 
     .navbar .logo {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .navbar ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
-        margin-top: 10px;
     }
 
     .navbar ul li {
-        margin: 0 10px;
+        margin: 0 5px;
     }
 
     .navbar ul li a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .home {
-        padding: 80px 5% 20px;
+        padding: 60px 5% 20px;
     }
 
     .home-info h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .home-info h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .home-info p {
@@ -309,26 +308,35 @@ a {
         margin-bottom: 20px;
     }
 
+    .home-img .img-box {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+    }
+
+    .btn-social-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
     .btn {
         font-size: 14px;
         padding: 8px 20px;
     }
 
-    .home-img .img-box {
-        width: 150px;
-        height: 150px;
-        margin: 20px auto;
-    }
-
     .sci {
-        margin-top: 20px;
+        display: flex;
+        margin: 0;
     }
 
     .sci a {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-        margin: 0 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 0 5px;
     }
 }
-
